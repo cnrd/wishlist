@@ -1,0 +1,108 @@
+#wishlist {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+p {
+	padding-bottom: 10px;
+}
+
+body {
+	background-color: black;
+}
+
+a {
+	color: green;
+}
+
+#name {
+	padding-top: 80px;
+	text-align: center;
+}
+
+/* Text styling */
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Droid Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Mono'), local('DroidSansMono'), url(http://fonts.gstatic.com/s/droidsansmono/v7/ns-m2xQYezAtqh7ai59hJYdJ2JT0J65PSe7wdxAnx_I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+h1 {
+	font-family: 'Droid Sans';
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26.4px;
+	color: lime;
+}
+h2 {
+	font-family: 'Droid Sans';
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.4px;
+	color: lime;
+}
+h3 {
+	font-family: 'Droid Sans';
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.4px;
+	color: lime;
+	padding-top: 10px;
+}
+p {
+	font-family: 'Droid Sans';
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	padding-left: 10px;
+	color: lime;
+}
+blockquote {
+	font-family: 'Droid Sans Mono';
+	font-size: 17.5px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25px;
+	padding-left: 10px;
+	color: lime;
+}
+pre {
+	font-family: 'Droid Sans';
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+	color: lime;
+}
