@@ -3,30 +3,32 @@
   <head>
     <title>Ønskeliste</title>
     <meta charset="utf-8"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script type="text/javascript">
+
       $(document).ready(function(){
 
         // Match any url from Google's scheme.
       	var gooRegEx = /.+?(https?:\/\/.+?)&.+/i;
 
         // Load the google docs document in a way that we can modify.
-        $("#wishlist").load("https://docs.google.com/document/d/105hjpRceOia7hV-79jo4BtOP0Xcdfoa3AdPGhZIqsH8/pub?embedded=true", function() {
+        $.get("https://docs.google.com/document/d/105hjpRceOia7hV-79jo4BtOP0Xcdfoa3AdPGhZIqsH8/pub?embedded=true", function(data) {
         	
-          // Remove meta from load of google docs
-          this.find("meta").remove();
+          var tmpPage = $(data);
+          
+          // Remove meta && style from load of google docs
+          tmpPage.splice(0, 2);
 
-          // Remove style from load of google docs
-        	this.find("style").remove();
-
+          $("#wishlist").append(tmpPage);
+          
           // Make the header an actual header
-        	this.children().first().replaceWith($('<h1>' + this.children().first().find("span").text() + '</h1>'));
+        	$("#wishlist").children().first().replaceWith($('<h1>' + $("#wishlist").children().first().find("span").text() + '</h1>'));
 
           // This should be at the bottom of the page.
-        	this.append('<p id="name">Af: Conrad Juhl Andersen</p>');
+        	$("#wishlist").append('<p id="name">Af: Conrad Juhl Andersen</p>');
           
           // Do for each link
           $('a').each(function() {
@@ -48,11 +50,10 @@
                 window.open(this.href, '_blank');
               });
             }
-          }); 
+          });
         });
       });
-    </script> 
-
+    </script>
   </head>
   <body> 
     <div id="wishlist"></div>
