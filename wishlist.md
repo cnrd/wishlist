@@ -1,5 +1,7 @@
 #Ønskeliste#
 
+###Elektronik###
+
 *	Apple Watch 2 (42mm)
 
 *	[Schiit Audio: Magni 2](https://goo.gl/mFnJ42) (125€ + 5€ porto)
@@ -14,6 +16,10 @@
 
 *	Xbox One Controller m. trådløs adapter til pc
 
-*	[MEN Extra Fine Merino V Neck Sweater](https://goo.gl/VMyNeP) Størrelse: L (Alle farver undtagen pink)
+###Tøj###
+
+*	[MEN Extra Fine Merino V Neck Sweater, Størrelse: L](https://goo.gl/VMyNeP) (Alle farver undtagen pink)
+
+###Diverse###
 
 *	Penge til at understøtte det kapitalistiske forbrugersamfund. - citat: Ditte Lindbjerg Nilsson
