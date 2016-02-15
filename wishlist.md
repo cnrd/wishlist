@@ -22,4 +22,4 @@
 
 ###Diverse###
 
-*	Penge til at understøtte det kapitalistiske forbrugersamfund. - citat: Ditte Lindbjerg Nilsson
+*	Penge til at understøtte det kapitalistiske forbrugersamfund.
