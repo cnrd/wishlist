@@ -2,9 +2,9 @@
 
 *	Apple Watch 2 (42mm)
 
-*		[Schiit Audio: Magni 2](​https://goo.gl/mFnJ42) (​125€ + 5€ porto)
+*	[Schiit Audio: Magni 2](​https://goo.gl/mFnJ42) (​125€ + 5€ porto)
 
-*		[​Schiit Audio: Modi 2](​https://goo.gl/eCxAy4) (129€ + 5€ porto)
+*	[​Schiit Audio: Modi 2](​https://goo.gl/eCxAy4) (129€ + 5€ porto)
 
 *	Apple TV 4
 
