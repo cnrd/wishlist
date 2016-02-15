@@ -9,34 +9,52 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-      	var gooRegEx = /.+?(https:\/\/goo.gl\/.+?)&.+/i;
+
+        // Match any url from Google's scheme.
+      	var gooRegEx = /.+?(https?:\/\/.+?)&.+/i;
+
+        // Load the google docs document in a way that we can modify.
         $("#wishlist").load("https://docs.google.com/document/d/105hjpRceOia7hV-79jo4BtOP0Xcdfoa3AdPGhZIqsH8/pub?embedded=true", function() {
-        	this.find("meta").remove();
+        	
+          // Remove meta from load of google docs
+          this.find("meta").remove();
+
+          // Remove style from load of google docs
         	this.find("style").remove();
+
+          // Make the header an actual header
         	this.children().first().replaceWith($('<h1>' + this.children().first().find("span").text() + '</h1>'));
+
+          // This should be at the bottom of the page.
         	this.append('<p id="name">Af: Conrad Juhl Andersen</p>');
-        	//console.log(this.children().first().find("span").text());
+          
+          // Do for each link
           $('a').each(function() {
-			var href = this.href;
-            var match = gooRegEx.exec(href);
+			      
+            // Match on all of google's modified links
+            var match = gooRegEx.exec(this.href);
+
+            // If we found a modified link, change it back.
             if(match) {
             	$(this).attr('href', match[1]);
             }
+
+            // Add _blank to all links, as we want them to open in a new window.
             var a = new RegExp('/' + window.location.host + '/');
             if(!a.test(this.href)) {
-              	$(this).click(function(event) {
-                	event.preventDefault();
-                	event.stopPropagation();
-                	window.open(this.href, '_blank');
+              $(this).click(function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                window.open(this.href, '_blank');
               });
             }
           }); 
-        }); //Include all content from secondary file 
+        });
       });
     </script> 
 
-    </head>
-    <body> 
+  </head>
+  <body> 
     <div id="wishlist"></div>
   </body> 
 </html>
