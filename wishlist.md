@@ -2,7 +2,7 @@
 
 ###Elektronik###
 
-*	[Schiit Audio: Magni 2](https://www.schiit-europe.com/index.php/producten/amps/magni2-product-1.html) (125€ + 5€ porto)
+*	[Schiit Audio: Magni 2](http://www.schiit-europe.com/index.php/producten/amps/magni2-product-1.html) (125€ + 5€ porto)
 
 *	[Schiit Audio: Modi 2](http://www.schiit-europe.com/index.php/producten/dacs/modi2-usb-product-7.html) (129€ + 5€ porto)
 
