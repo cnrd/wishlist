@@ -4,59 +4,21 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Ønskeliste</title>
     <meta charset="utf-8"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-
-        // Match any url from Google's scheme.
-      	var gooRegEx = /.+?(https?:\/\/.+?)&.+/i;
-
-        // Load the google docs document in a way that we can modify.
-        $.get("https://docs.google.com/document/d/105hjpRceOia7hV-79jo4BtOP0Xcdfoa3AdPGhZIqsH8/pub?embedded=true", function(data) {
-        	
-          var tmpPage = $(data);
-          
-          // Remove meta && style from load of google docs
-          tmpPage.splice(0, 2);
-
-          $("#wishlist").append(tmpPage);
-          
-          // Make the header an actual header
-        	$("#wishlist").children().first().replaceWith($('<h1>' + $("#wishlist").children().first().find("span").text() + '</h1>'));
-
-          // This should be at the bottom of the page.
-        	$("#wishlist").append('<p id="name">Af: Conrad Juhl Andersen</p>');
-          
-          // Do for each link
-          $('a').each(function() {
-			      
-            // Match on all of google's modified links
-            var match = gooRegEx.exec(this.href);
-
-            // If we found a modified link, change it back.
-            if(match) {
-            	$(this).attr('href', match[1]);
-            }
-
-            // Add _blank to all links, as we want them to open in a new window.
-            var a = new RegExp('/' + window.location.host + '/');
-            if(!a.test(this.href)) {
-              $(this).click(function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                window.open(this.href, '_blank');
-              });
-            }
-          });
-        });
-      });
-    </script>
   </head>
-  <body> 
-    <div id="wishlist"></div>
+  <body>
+    <div id=body>
+    <h1>Ditte- og Conrads ønskelister</h1>
+    <h1 style="padding-top: 80px;">🎁</h1>
+    <p><a href="/Conrad">Conrads Ønskeliste</a></p>
+    <p><a href="/Ditte">Dittes Ønskeliste</a></p>
+    <p><a href="/xn--flles-sra">Fælles Ønskeliste</a></p>
+    <p><a href="/Yvonne">Yvonnes Ønskeliste</a></p>
+    <h1 style="padding-bottom: 80px;">🎁</h1>
+    <p>Gave koordinatorer: Jane &amp; Lone</p>
+    <p style="padding-top: 50px;">OBS: Siderne virker ikke i Internet Explorer og Edge</p>
+    <p><a href="https://www.google.dk/chrome/browser/desktop/">(Download en ordenlig browser)</a></p>
+    <p>Af: Conrad Juhl Andersen</p>
+    </div>
   </body> 
 </html>
