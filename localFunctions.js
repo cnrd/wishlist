@@ -8,7 +8,7 @@ function googleLinks() {
 
     // If we found a modified link, change it back.
     if(match) {
-    	$(this).attr('href', match[1]);
+    	$(this).attr('href', decodeURIComponent(match[1]));
     }
 
     // Add _blank to all links, as we want them to open in a new window.
